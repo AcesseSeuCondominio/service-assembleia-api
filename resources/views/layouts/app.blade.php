@@ -53,7 +53,7 @@
 
                             <div class="flex items-center">
                                 @guest
-                                    <a class="flex items-center gap-x-2 font-medium text-white/[.8] hover:text-white sm:my-6 sm:pl-6" href="#">
+                                    <a class="flex items-center gap-x-2 font-medium text-white/[.8] hover:text-white sm:my-6 sm:pl-6" href="{{ route('login') }}">
                                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                         <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
                                         </svg>
@@ -80,46 +80,6 @@
                 </div>
             </nav>
             <main>
-                <div class="bg-gray-50 dark:bg-gray-950">
-                    <div class="relative overflow-hidden">
-                        <div class="absolute inset-y-0 h-full w-full" aria-hidden="true">
-                            <div class="relative h-full">
-                                <svg width="404" height="784" fill="none" viewBox="0 0 404 784" class="absolute right-full translate-y-1/3 translate-x-1/4 transform sm:translate-x-1/2 md:translate-y-1/2 lg:translate-x-full">
-                                    <defs>
-                                        <pattern id="hero-pattern-01" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                                            <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-800" fill="currentColor"></rect>
-                                        </pattern>
-                                    </defs>
-                                    <rect width="404" height="784" fill="url(#hero-pattern-01)"></rect>
-                                </svg>
-                                <svg width="404" height="784" fill="none" viewBox="0 0 404 784" class="absolute left-full -translate-y-3/4 -translate-x-1/4 transform sm:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-x-3/4">
-                                    <defs>
-                                        <pattern id="hero-pattern-02" x="0" y="0"
-                                            width="20" height="20" patternUnits="userSpaceOnUse">
-                                            <rect x="0" y="0" width="4" height="4"
-                                                class="text-gray-200 dark:text-gray-800" fill="currentColor">
-                                            </rect>
-                                        </pattern>
-                                    </defs>
-                                    <rect width="404" height="784" fill="url(#hero-pattern-02)"></rect>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="relative pt-6 pb-16 sm:pb-24">
-                            <div class="mx-auto mt-10 max-w-7xl px-4 sm:mt-18 sm:px-6">
-                                <div class="text-center max-w-3xl mx-auto">
-                                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl md:text-6xl">
-                                        <span class="block">Assembleia Virtual</span>
-                                        <span class="block heading-highlight">Assunto da assembleia</span>
-                                    </h1>
-                                    <p class="mx-auto mt-3 max-w-md text-base text-white dark:text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl line-clamp-3">
-                                        Descrição completa da assembleia
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 @yield('content')
             </main>
             <footer class="bg-white dark:bg-black">

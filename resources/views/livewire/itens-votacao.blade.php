@@ -13,10 +13,10 @@
                     {{ $item->vot_pergunta }}
                 </div>
                 <div class="flex items-end justify-end">
-                    <button type="button" class="px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-yellow-700 rounded-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">
+                    <a href="{{ route('votacao') }}" type="button" class="px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-yellow-700 rounded-lg hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">
                         <i class="ti ti-flag-3-filled mr-1"></i>
                         Votar agora
-                    </button>
+                    </a>
                     <button disabled type="button" class="ml-2 px-3 py-2 text-xs font-medium text-center inline-flex items-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         <i class="ti ti-circle-check-filled mr-1"></i>
                         Você votou

@@ -27,4 +27,9 @@ class Votacao extends Model
     {
         return $this->hasMany(VotacaoResposta::class, 'vre_vot_codigo', 'vot_codigo');
     }
+
+    public function votacaoItens()
+    {
+        return $this->hasMany(VotacaoItem::class, 'voi_vot_codigo', 'vot_codigo');
+    }
 }
