@@ -32,4 +32,9 @@ class Usuario extends Authenticatable
     ];
 
     protected $hidden = ['usu_senha', 'usu_senha_api'];
+
+    public function getAuthPassword()
+    {
+        return $this->usu_senha;
+    }
 }
