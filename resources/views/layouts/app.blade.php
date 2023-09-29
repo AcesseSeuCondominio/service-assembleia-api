@@ -22,6 +22,12 @@
     @livewireStyles
 
     @stack('css')
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
 </head>
 
 <body>
