@@ -46,3 +46,14 @@
     </div>
 </div>
 @endsection
+@push('js')
+<script>
+    document.addEventListener('livewire:load', function() {
+        window.Echo.channel("assembleia.1")
+            .listen('.VotoEvent', (data) => {
+                window.Livewire.emit('atualizaVoto');
+            });
+    });
+</script>
+@endpush
+

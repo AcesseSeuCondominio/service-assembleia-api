@@ -107,15 +107,6 @@
 
     @livewireScripts
 
-    <script>
-        document.addEventListener('livewire:load', function() {
-            window.Echo.channel("project.1")
-                .listen('.StatusVoting', (data) => {
-
-                });
-        });
-    </script>
-
     @stack('js')
 </body>
 

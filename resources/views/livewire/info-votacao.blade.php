@@ -29,3 +29,13 @@
         </div>
     </div>
 </div>
+@push('js')
+<script>
+    document.addEventListener('livewire:load', function() {
+        window.Echo.channel("assembleia.1")
+            .listen('.VotoEvent', (data) => {
+
+            });
+    });
+</script>
+@endpush
