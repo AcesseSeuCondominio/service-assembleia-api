@@ -16,6 +16,6 @@ export default {
             },
         },
     },
-
+    darkMode: true,
     plugins: [forms],
 };
