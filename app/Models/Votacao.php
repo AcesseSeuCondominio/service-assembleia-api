@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\VotacaoResposta;
 use Illuminate\Database\Eloquent\Model;
 
 class Votacao extends Model
@@ -21,4 +22,9 @@ class Votacao extends Model
         'vot_requer_justificativa',
         'vot_liberado_votacao'
     ];
+
+    public function votacaoRespostas()
+    {
+        return $this->hasMany(VotacaoResposta::class, 'vre_vot_codigo', 'vot_codigo');
+    }
 }
