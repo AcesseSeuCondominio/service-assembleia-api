@@ -17,6 +17,8 @@
     },
     "dependencies": {
         "flowbite": "^1.8.1",
-        "preline": "^1.9.0"
+        "laravel-echo": "^1.15.3",
+        "preline": "^1.9.0",
+        "pusher-js": "^8.3.0"
     }
 }
